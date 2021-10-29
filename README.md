@@ -1,19 +1,25 @@
-# Building
+# 构建
 
-* [Gradle](https://gradle.org/) - Dependency Management
+* [Gradle](https://gradle.org/) - 本插件使用Gradle构建
 
-The GradleWrapper in included in this project.
+GradleWrapper 已内置在本项目中
 
-**Windows:**
+**视窗(DOS):**
 
 ```
 gradlew.bat clean build
 ```
 
-**macOS/Linux:**
+**视窗(PowerShell):**
+
+```
+./gradlew.bat clean build
+```
+
+**macOS(苹果系统)/Linux:**
 
 ```
 ./gradlew clean build
 ```
 
-Build artifacts should be found in `./build/libs` folder.
+构建工件将会保存至 `./build/libs` 文件夹.
