@@ -1,6 +1,7 @@
 # 构建
 
 * [Gradle](https://gradle.org/) - 本插件使用Gradle构建
+* 本项目采用GPL v3协议开源 任何使用本项目代码的项目 请使用GPL v3协议
 
 GradleWrapper 已内置在本项目中
 
