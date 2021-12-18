@@ -21,7 +21,7 @@ object ChatEvents {
                 }
             }
             for (groups in ChatChannel.config.getStringList("GameChatToGroup.groups")) {
-                Bot.getApi().sendGroupMsg(groups, "${event.player.name}: ${event.message.uncolored()}")
+                Bot.getApi().sendGroupMsg(groups, "[游戏消息] ${event.player.name}: ${event.message.uncolored()}")
             }
         }
     }
