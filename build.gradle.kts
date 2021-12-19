@@ -7,8 +7,7 @@ plugins {
 taboolib {
     description {
         contributors {
-            name("小白").description("TabooLib Developer")
-            name("jim20071128").description("Minecraft Developer")
+            name("FlyProject").description("Minecraft Developer")
         }
         dependencies {
             name("AmazingBot")

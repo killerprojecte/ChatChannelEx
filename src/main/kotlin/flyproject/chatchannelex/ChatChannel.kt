@@ -1,7 +1,7 @@
-package com.xbaimiao.chatchannel
+package flyproject.chatchannelex
 
-import com.xbaimiao.chatchannel.Switch.isSwitch
-import com.xbaimiao.chatchannel.Switch.setSwitch
+import flyproject.chatchannelex.Switch.isSwitch
+import flyproject.chatchannelex.Switch.setSwitch
 import me.albert.amazingbot.bot.Bot
 import me.clip.placeholderapi.PlaceholderAPI
 import org.bukkit.entity.Player

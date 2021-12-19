@@ -1,13 +1,14 @@
-package com.xbaimiao.chatchannel
+package flyproject.chatchannelex
 
 import me.albert.amazingbot.bot.Bot
+import me.clip.placeholderapi.PlaceholderAPI
 import org.bukkit.event.player.AsyncPlayerChatEvent
 import taboolib.common.platform.event.SubscribeEvent
 import taboolib.module.chat.uncolored
 
 /**
- * @Author xbaimiao
- * @Date 2021/10/25 21:26
+ * @Author FlyProject
+ * @Date 2021/12/19
  */
 object ChatEvents {
 
@@ -21,7 +22,13 @@ object ChatEvents {
                 }
             }
             for (groups in ChatChannel.config.getStringList("GameChatToGroup.groups")) {
-                Bot.getApi().sendGroupMsg(groups, "[游戏消息] ${event.player.name}: ${event.message.uncolored()}")
+                var send = ChatChannel.config.getString("GameToGroup")
+                send = PlaceholderAPI.setPlaceholders(
+                    event.player,
+                    send
+                )
+                send = send.replace("%msg%",event.message.uncolored())
+                Bot.getApi().sendGroupMsg(groups, send)
             }
         }
     }

@@ -1,10 +1,10 @@
-package com.xbaimiao.chatchannel
+package flyproject.chatchannelex
 
 import org.bukkit.entity.Player
 
 /**
- * @Author xbaimiao
- * @Date 2021/10/25 21:17
+ * @Author FlyProject
+ * @Date 2021/12/19
  */
 object Switch {
 

@@ -1,6 +1,6 @@
-package com.xbaimiao.chatchannel
+package flyproject.chatchannelex
 
-import com.xbaimiao.chatchannel.Switch.isSwitch
+import flyproject.chatchannelex.Switch.isSwitch
 import me.albert.amazingbot.bot.Bot
 import me.albert.amazingbot.events.GroupMessageEvent
 import net.mamoe.mirai.message.data.At
@@ -33,7 +33,7 @@ object GroupEvents {
 
         val msg = StringBuilder()
 
-        val message = event.event.message.uncolored()
+        val message = event.event.message
         val group = event.event.group
         val images = ArrayList<Image>()
         message.forEach { m ->
@@ -67,7 +67,7 @@ object GroupEvents {
         if (images.isEmpty()) {
             for (player in Bukkit.getOnlinePlayers()) {
                 if (player.isSwitch()) {
-                    player.sendMessage(text)
+                    player.sendMessage(Util.removecolor(text))
                 }
             }
             return
