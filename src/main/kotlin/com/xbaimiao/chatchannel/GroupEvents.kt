@@ -33,7 +33,7 @@ object GroupEvents {
 
         val msg = StringBuilder()
 
-        val message = event.event.message
+        val message = event.event.message.uncolored()
         val group = event.event.group
         val images = ArrayList<Image>()
         message.forEach { m ->
