@@ -12,6 +12,7 @@ import net.md_5.bungee.api.chat.HoverEvent
 import net.md_5.bungee.api.chat.TextComponent
 import org.bukkit.Bukkit
 import taboolib.common.platform.event.SubscribeEvent
+import taboolib.module.chat.uncolored
 import java.util.*
 
 object GroupEvents {
